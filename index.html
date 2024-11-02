@@ -137,11 +137,11 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/ARBuilds.loader.js";
+        const loaderUrl = buildUrl + "/PortfolioHost.loader.js";
         const config = {
-            dataUrl: buildUrl + "/ARBuilds.data.br",
-            frameworkUrl: buildUrl + "/ARBuilds.framework.js.br",
-            codeUrl: buildUrl + "/ARBuilds.wasm.br",
+            dataUrl: buildUrl + "/PortfolioHost.data",
+            frameworkUrl: buildUrl + "/PortfolioHost.framework.js",
+            codeUrl: buildUrl + "/PortfolioHost.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "ZooAR",
