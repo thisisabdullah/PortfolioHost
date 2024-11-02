@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>ZooAR</title>
+    <title>image-tracking-3d-animation</title>
     <style>
         html {
             box-sizing: border-box;
@@ -132,26 +132,26 @@
             <div class="spinner"></div>
         </div>
     </div>
-    <script type="text/javascript" src="https://libs.zappar.com/zappar-cv/2.1.3/zappar-cv.js"></script>
+    <script type="text/javascript" src="https://libs.zappar.com/zappar-cv/2.1.2/zappar-cv.js"></script>
     <script>
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
         const loaderUrl = buildUrl + "/PortfolioHost.loader.js";
         const config = {
-            dataUrl: buildUrl + "/PortfolioHost.data",
-            frameworkUrl: buildUrl + "/PortfolioHost.framework.js",
-            codeUrl: buildUrl + "/PortfolioHost.wasm",
+            dataUrl: buildUrl + "/d7f79d35a71c164d250fa0c7ba4780e1.data",
+            frameworkUrl: buildUrl + "/db9c4d38645f738f1071071b93c13be6.js",
+            codeUrl: buildUrl + "/0179ecf7f768dd683f08c91e9568490a.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
-            productName: "ZooAR",
-            productVersion: "1.0.0",
+            productName: "image-tracking-3d-animation",
+            productVersion: "0.1",
         //Useful when used along with Filename as Hashes option
             cacheControl: function (url) {
             // typically includes: .data, .bundle, .zpt
             if (url.match(/\.data/) || url.match(/\.bundle/) || url.match(/\.zpt/)) {
-             return "must-revalidate";
-            }
+             return "immutable";
+}
    
             if (url.match(/\.mp4/) || url.match(/\.custom/) || url.match(/\.zbin/)) {
                 return "immutable";
